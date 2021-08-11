@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <h2 class="flat-name"><%= @flat.name %></h2>
+  <img src="<%= @flat.image_url%>" class="flat-img img-fluid w-100" alt="flat image">
+
+  <div>
+    <div class="mt-4 d-flex justify-content-center align-items-center">
+      <i class="icon fas fa-home fs-1"></i>
+      <p class="mb-0"><%= @flat.description %></p>
+    </div>
+    <div class="flat-address mt-4 d-flex justify-content-center align-items-center">
+      <i class="icon fas fa-user-friends fs-3"></i>
+      <p class="mb-0 fs-4">Max <%= @flat.number_of_guests %> guests</p>
+      <i class="ml-3 icon fas fa-dollar-sign fs-3"></i>
+      <p class="mb-0 fs-4"><%= @flat.price_per_night %> € / night</p>
+    </div>
+    <div class="flat-address mt-4 d-flex justify-content-center align-items-center">
+      <i class="icon fas fa-map-marker-alt fs-1"></i>
+      <p class="mb-0"><%= @flat.address %></p>
+    </div>
+  </div>
+</div>

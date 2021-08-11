@@ -1,0 +1,35 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn.dribbble.com/users/1305315/screenshots/14788276/media/18d6ef8ae22e0522f037bb115639be09.png?compress=1&resize=1600x1200);">
+  <div class="container">
+    <h1>Our vacation rental houses</h1>
+    <p>Book unique vacation rental houses, apartments, and more...</p>
+  </div>
+</div>
+
+
+<div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3  g-4">
+    <% @flats.each do |flat| %>
+        <div class="col">
+          <div class="card h-100 card-with-map">
+            <%= link_to flat_path(flat), class: 'card-hover' do %>
+              <img src="<%= flat.image_url%>" class="card-img-size card-img-top" alt="flat image">
+            <% end %>
+            <div class="card-body">
+              <h5 class="card-title"><%= flat.name %></h5>
+              <p class="card-text"><%= flat.description%></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted d-flex justify-content-evenly">
+                <%= link_to edit_flat_path(flat) do %>
+                  <i class="icon-edit fas fa-pencil-alt"></i>
+                <% end %>
+                <%= link_to flat_path(flat), method: :delete do %>
+                  <i class="icon-delete far fa-trash-alt"></i>
+                <% end %>
+              </small>
+            </div>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>

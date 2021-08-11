@@ -1,0 +1,18 @@
+<div class="form-add container mt-4 p-3 w-50">
+  <h1 class="text-center">Add a new Flat</h1>
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name, class:'form-control' %>
+    <p> </p>
+    <%= f.input :address %>
+    <p> </p>
+    <%= f.input :image_url %>
+    <p> </p>
+    <%= f.input :description %>
+    <p> </p>
+    <%= f.input :number_of_guests %>
+    <p> </p>
+    <%= f.input :price_per_night %>
+    <p> </p>
+    <%= f.button :submit, class: 'btn btn-success text-center submit'%>
+  <% end %>
+</div>

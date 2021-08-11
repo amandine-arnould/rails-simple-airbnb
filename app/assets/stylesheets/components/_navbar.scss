@@ -1,0 +1,36 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.search-input {
+  width: 180px;
+}
+
+.search:hover {
+  color: white;
+}
+
+.button-add {
+  display: inline-block;
+  width: 100px;
+  margin-left: 10px;
+  border-radius: 4px;
+  background-color: #FF385D;
+  border: 1px #FF385D solid;
+  color: white;
+}
+
+.button-add:hover{
+  color: white;
+  background-color: rgba(255, 56, 93, 0.8);
+  border: 1px rgba(255, 56, 93, 0.8) solid;
+}

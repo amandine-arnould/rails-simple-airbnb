@@ -1,0 +1,40 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.flat-name {
+  font-weight: 700;
+  color: #252525;
+}
+
+.flat-img {
+  height: 500px;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.icon{
+  margin-right: 20px;
+  color: #FF385D;
+  padding: 0 5px;
+}
+
+.icon-edit:hover,
+.icon-delete:hover {
+  color: #df506a;
+}
+
+.flat-address {
+  margin: auto;
+  width: fit-content;
+}
+
+.form-add {
+  background-color: #fff1f3;
+}
+
+.submit {
+  color: white;
+}
